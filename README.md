@@ -204,7 +204,7 @@ If you ever want to customize the theme, add plugins, or extend utilities, you c
 
 **Tailwind utilities are not applying**
 
-- Ensure `@import "tailwindcss";` is at the **top** of `src/app.css`.
+- Ensure `@import "tailwindcss";` is at the **top** of `src/styles.css`.
 - Verify `vite.config.js` includes `tailwind()` in `plugins`.
 - Restart `npm run dev` after installing plugins or changing Vite config.
 
