@@ -227,4 +227,4 @@ If you ever want to customize the theme, add plugins, or extend utilities, you c
 
 ## 📄 License
 
-MIT © Your Name
+MIT © Prakhar Bhawsar

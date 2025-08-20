@@ -5,7 +5,7 @@ import ScheduleOverview from "./components/ScheduleOverview";
 import { addDays, addMonths, toISO } from "./lib/date";
 import { schedule } from "./lib/scheduler";
 import { DUMMY_API_DATA } from "./data/dummy.js";
-import "./app.css";
+import "./styles.css";
 
 export default function App() {
   const [cursor, setCursor] = useState(() => {
