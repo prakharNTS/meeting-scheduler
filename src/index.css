@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Tokens & tiny utilities used in components */
+:root {
+  --ring: 0 0% 40% / 0.25;
+}
+.btn {
+  @apply inline-flex items-center gap-2 rounded-xl border px-3 py-2 shadow-sm transition;
+}
+.btn {
+  @apply border-slate-300 bg-white hover:bg-slate-50 text-slate-900;
+}
+.btn-primary {
+  @apply border-blue-600 bg-blue-600 text-white hover:bg-blue-500;
+}
+.badge {
+  @apply inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs text-slate-600 border-slate-300 bg-white;
+}
+.card {
+  @apply rounded-2xl border border-slate-200 bg-white shadow-sm p-4;
+}
+.table {
+  @apply w-full text-sm;
+}
+.table th {
+  @apply text-slate-500 font-semibold pb-2 border-b border-slate-200 text-left;
+}
+.table td {
+  @apply py-2 border-b border-slate-100;
+}
+.input {
+  @apply rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm placeholder:text-slate-400;
+}
+.select {
+  @apply rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm;
+}
+.day {
+  @apply rounded-xl border border-slate-300 bg-slate-200/60 p-2 min-h-[110px] text-left;
+}
+.day--today {
+  @apply outline outline-1 outline-dashed outline-slate-400;
+}
+.day--selected {
+  @apply outline outline-[3px] outline-blue-500/40;
+}
+.chip {
+  @apply inline-block rounded-full border border-slate-300 bg-white px-2 py-0.5 text-[11px] text-slate-700;
+}
