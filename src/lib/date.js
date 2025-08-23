@@ -28,10 +28,24 @@ export const isSameDay = (a, b) =>
   a.getMonth() === b.getMonth() &&
   a.getDate() === b.getDate();
 
-export const toISO = (d) =>
-  new Date(d.getFullYear(), d.getMonth(), d.getDate())
-    .toISOString()
-    .slice(0, 10);
+// export const toISO = (d) =>
+//   new Date(d.getFullYear(), d.getMonth(), d.getDate())
+//     .toISOString()
+//     .slice(0, 10);
+
+// The Corrected Code
+export const toISO = (d) => {
+  // Get the year, month, and day from the date object
+  const year = d.getFullYear();
+  // getMonth() is 0-indexed (0=Jan), so we add 1.
+  // padStart ensures the month is always 2 digits (e.g., 08 for August)
+  const month = String(d.getMonth() + 1).padStart(2, "0");
+  // padStart ensures the day is always 2 digits (e.g., 01, 02, ... 23)
+  const day = String(d.getDate()).padStart(2, "0");
+
+  // Manually join them together. No timezone conversion happens!
+  return `${year}-${month}-${day}`;
+};
 
 export const monthLabel = (d) =>
   d.toLocaleString(undefined, { month: "long", year: "numeric" });
