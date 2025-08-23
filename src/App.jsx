@@ -74,7 +74,6 @@ export default function App() {
     setMeetings((prev) => prev.map((x) => (x.id === m.id ? m : x)));
   };
 
-  console.log({ selectedDates });
   return (
     <div className="max-w-6xl mx-auto p-4">
       <h1 className="text-2xl font-bold mb-3">Meeting Scheduler</h1>
